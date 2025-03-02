@@ -80,7 +80,7 @@ export default function Home() {
                         transition={{ duration: 0.5 }}
                         className="text-5xl md:text-7xl font-bold text-white mb-6"
                     >
-                        Hi, I&apos;m Cristian
+                        Hi, I&apos;m Cristian I
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
