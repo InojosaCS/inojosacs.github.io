@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/inojosacs.github.io",
+  assetPrefix: "/inojosacs.github.io/",
 }
 
 module.exports = nextConfig
