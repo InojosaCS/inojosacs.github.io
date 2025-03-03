@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-[#0f172a] text-slate-300 font-sans">
             <header className="fixed w-full top-0 z-10 bg-[#0f172a]/90 backdrop-blur-sm">
-                <div className="container mx-auto px-28 py-4 flex justify-between items-center">
+                <div className="container mx-auto px-6 md:px-28 py-4 flex justify-between items-center">
                     <NavLink href="/">
                         <div className="text-[#0bc] font-bold text-xl">
                             <Terminal className="inline-block mr-2" size={20} />
@@ -49,7 +49,7 @@ export default function Home() {
                 </div>
             </header>
 
-            <main className="container mx-auto px-28 pt-32 pb-20">
+            <main className="container mx-auto px-6 md:px-28 pt-32 pb-20">
                 <section className="min-h-[80vh] flex flex-col justify-center">
                     <div className="terminal-container bg-[#0d1b2a] p-4 rounded-xl border border-slate-700 mb-12 max-w-lg">
                         <div className="flex items-center mb-2">
@@ -105,7 +105,7 @@ export default function Home() {
                     </motion.div>
                 </section>
 
-                <section id="about" className="py-20">
+                <section id="about" className="py-10 md:py-20">
                     <SectionHeading>About Me</SectionHeading>
                     <div className="grid md:grid-cols-3 gap-10">
                         <div className="md:col-span-2">
@@ -145,7 +145,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="experience" className="py-20">
+                <section id="experience" className="py-10 md:py-20">
                     <SectionHeading>Where I&apos;ve Worked</SectionHeading>
                     <div className="grid md:grid-cols-3 gap-8">
                         {experiences.map((exp, index) => (
@@ -154,12 +154,12 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="education" className="py-20">
+                <section id="education" className="py-10 md:py-20">
                     <SectionHeading>Education</SectionHeading>
                     <EducationCard />
                 </section>
 
-                <section id="projects" className="py-20">
+                <section id="projects" className="py-10 md:py-20">
                     <SectionHeading>Some Things I&apos;ve Built</SectionHeading>
                     <div className="space-y-24">
                         {projects.map((project, index) => (
@@ -171,7 +171,7 @@ export default function Home() {
             </main>
 
             <footer className="bg-[#0f172a] py-6 text-center text-sm text-slate-500">
-                <div className="container mx-auto px-28">
+                <div className="container mx-auto px-6 md:px-28">
                     <p className="mt-2">© {new Date().getFullYear()} All Rights Reserved</p>
                 </div>
             </footer>
