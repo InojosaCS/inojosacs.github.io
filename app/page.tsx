@@ -105,7 +105,7 @@ export default function Home() {
                     </motion.div>
                 </section>
 
-                <section id="about" className="py-10 md:py-20">
+                <section id="about" className="py-10">
                     <SectionHeading>About Me</SectionHeading>
                     <div className="grid md:grid-cols-3 gap-10">
                         <div className="md:col-span-2">
@@ -145,7 +145,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="experience" className="py-10 md:py-20">
+                <section id="experience" className="py-10">
                     <SectionHeading>Where I&apos;ve Worked</SectionHeading>
                     <div className="grid md:grid-cols-3 gap-8">
                         {experiences.map((exp, index) => (
@@ -154,12 +154,12 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="education" className="py-10 md:py-20">
+                <section id="education" className="py-10">
                     <SectionHeading>Education</SectionHeading>
                     <EducationCard />
                 </section>
 
-                <section id="projects" className="py-10 md:py-20">
+                <section id="projects" className="py-10">
                     <SectionHeading>Some Things I&apos;ve Built</SectionHeading>
                     <div className="space-y-24">
                         {projects.map((project, index) => (
