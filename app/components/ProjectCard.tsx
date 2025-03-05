@@ -12,7 +12,7 @@ export type Project = {
 export function ProjectCard({ project, isEven }: { project: Project; isEven: boolean }) {
     return (
         <div className={`relative md:grid md:grid-cols-12 gap-4 items-center ${isEven ? "" : "md:text-right"}`}>
-            <div className={`md:col-span-7 ${isEven ? "md:col-start-6" : "md:col-start-1"} relative z-10`}>
+            <div className={`md:col-span-7 ${isEven ? "md:col-start-6" : "md:col-start-1"} relative z-5`}>
                 <div className="relative group overflow-hidden rounded-xl">
                     <img
                         src={project.image || "/placeholder.svg"}
@@ -23,7 +23,7 @@ export function ProjectCard({ project, isEven }: { project: Project; isEven: boo
                 </div>
             </div>
 
-            <div className={`md:col-span-6 ${isEven ? "md:col-start-1" : "md:col-start-7"} relative z-20`}>
+            <div className={`md:col-span-6 ${isEven ? "md:col-start-1" : "md:col-start-7"} relative z-5`}>
                 <div
                     className={`bg-[#1e293b] p-6 rounded-xl shadow-xl ${isEven ? "md:-mr-16" : "md:-ml-16"} mt-[-2rem] md:mt-0`}
                 >
